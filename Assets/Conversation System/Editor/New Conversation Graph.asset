@@ -1,0 +1,895 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8788079011320908138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28381776fcd1b7548a15164fc98b6813, type: 3}
+  m_Name: Answer
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -280, y: 24}
+  ports:
+    keys:
+    - connection
+    - answerText
+    values:
+    - _fieldName: connection
+      _node: {fileID: -8788079011320908138}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: positive_Out
+        node: {fileID: -7083674542461254123}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: answerText
+      _node: {fileID: -8788079011320908138}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: connections
+        node: {fileID: -7019396739160396595}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  connection: 
+  answerText: Ask further
+  answerTextOnScreen: What am I looking for?
+  waitSeconds: 1
+  events:
+  - {fileID: 11400000, guid: 086bea14a67cd404fb6347f08d393458, type: 2}
+--- !u!114 &-7083674542461254123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5649aa893e68f41b33d851dd7109a5, type: 3}
+  m_Name: Conversation
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -552, y: 24}
+  ports:
+    keys:
+    - connections
+    - positive_Out
+    values:
+    - _fieldName: connections
+      _node: {fileID: -7083674542461254123}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: positive_Out
+      _node: {fileID: -7083674542461254123}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: connection
+        node: {fileID: -8788079011320908138}
+        reroutePoints: []
+      - fieldName: connection
+        node: {fileID: -5707446606759293275}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  conversationText: There's a shady man looking at you
+  connections: 
+  positive_Out: 
+  textOnScreen: You must find it before the others do.
+  waitSeconds: 1
+  isFirst: 1
+  fileName: example 1
+  show: 1
+--- !u!114 &-7019396739160396595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5649aa893e68f41b33d851dd7109a5, type: 3}
+  m_Name: Conversation
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 8, y: -456}
+  ports:
+    keys:
+    - connections
+    - positive_Out
+    values:
+    - _fieldName: connections
+      _node: {fileID: -7019396739160396595}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: answerText
+        node: {fileID: -8788079011320908138}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: positive_Out
+      _node: {fileID: -7019396739160396595}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: connection
+        node: {fileID: 6658894178628311673}
+        reroutePoints: []
+      - fieldName: connection
+        node: {fileID: -4433541023015583166}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  conversationText: The shady dude takes a good look at you
+  connections: 
+  positive_Out: 
+  textOnScreen: '"We could get arrested for this, son."'
+  waitSeconds: 1
+  isFirst: 0
+  fileName: 
+  show: 1
+--- !u!114 &-5707446606759293275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28381776fcd1b7548a15164fc98b6813, type: 3}
+  m_Name: Answer
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -280, y: 264}
+  ports:
+    keys:
+    - connection
+    - answerText
+    values:
+    - _fieldName: connection
+      _node: {fileID: -5707446606759293275}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: positive_Out
+        node: {fileID: -7083674542461254123}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: answerText
+      _node: {fileID: -5707446606759293275}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: connections
+        node: {fileID: 2082018379306309127}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  connection: 
+  answerText: Be mean
+  answerTextOnScreen: ...... / Ehm what?
+  waitSeconds: 1
+  events:
+  - {fileID: 11400000, guid: fd5feec781e769f4488100097f0ba056, type: 2}
+--- !u!114 &-5485526162166686023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5649aa893e68f41b33d851dd7109a5, type: 3}
+  m_Name: Conversation
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1000, y: 24}
+  ports:
+    keys:
+    - connections
+    - positive_Out
+    values:
+    - _fieldName: connections
+      _node: {fileID: -5485526162166686023}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: answerText
+        node: {fileID: 7275444642240160975}
+        reroutePoints: []
+      - fieldName: answerText
+        node: {fileID: 6658894178628311673}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: positive_Out
+      _node: {fileID: -5485526162166686023}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: connection
+        node: {fileID: -2376449673636772870}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  conversationText: The npc is sad but not surpirsed
+  connections: 
+  positive_Out: 
+  textOnScreen: Once you leave, you'll lose everything, son
+  waitSeconds: 1
+  isFirst: 0
+  fileName: 
+  show: 1
+--- !u!114 &-4433541023015583166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28381776fcd1b7548a15164fc98b6813, type: 3}
+  m_Name: Answer
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 760, y: -392}
+  ports:
+    keys:
+    - connection
+    - answerText
+    values:
+    - _fieldName: connection
+      _node: {fileID: -4433541023015583166}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: positive_Out
+        node: {fileID: -7019396739160396595}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: answerText
+      _node: {fileID: -4433541023015583166}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: connections
+        node: {fileID: 5395674352859968162}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  connection: 
+  answerText: Tell him he seems okay
+  answerTextOnScreen: I'm in / What do I have to do?
+  waitSeconds: 1
+  events:
+  - {fileID: 11400000, guid: 086bea14a67cd404fb6347f08d393458, type: 2}
+--- !u!114 &-2376449673636772870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28381776fcd1b7548a15164fc98b6813, type: 3}
+  m_Name: Answer
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1384, y: -40}
+  ports:
+    keys:
+    - connection
+    - answerText
+    values:
+    - _fieldName: connection
+      _node: {fileID: -2376449673636772870}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: positive_Out
+        node: {fileID: 5395674352859968162}
+        reroutePoints: []
+      - fieldName: positive_Out
+        node: {fileID: -5485526162166686023}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: answerText
+      _node: {fileID: -2376449673636772870}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: connections
+        node: {fileID: -1932512908646166454}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  connection: 
+  answerText: Tell him to get on with it
+  answerTextOnScreen: Please.. get to the point
+  waitSeconds: 1
+  events: []
+--- !u!114 &-1932512908646166454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5649aa893e68f41b33d851dd7109a5, type: 3}
+  m_Name: Conversation
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1725.8892, y: -15.786194}
+  ports:
+    keys:
+    - connections
+    - positive_Out
+    values:
+    - _fieldName: connections
+      _node: {fileID: -1932512908646166454}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: answerText
+        node: {fileID: -2376449673636772870}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: positive_Out
+      _node: {fileID: -1932512908646166454}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: connection
+        node: {fileID: 6034960663221063611}
+        reroutePoints: []
+      - fieldName: connection
+        node: {fileID: 467858763464305773}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  conversationText: There was a strange wailing sound coming from the next room
+  connections: 
+  positive_Out: 
+  textOnScreen: I saw it as clearly as I see you standing there now. / There was
+    a legend about the well in the garden / The whole family had been cursed since
+    / That summer seemed to last forever
+  waitSeconds: 1
+  isFirst: 0
+  fileName: 
+  show: 1
+--- !u!114 &-1130739687890615572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5649aa893e68f41b33d851dd7109a5, type: 3}
+  m_Name: Conversation
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 2200, y: -312}
+  ports:
+    keys:
+    - connections
+    - positive_Out
+    values:
+    - _fieldName: connections
+      _node: {fileID: -1130739687890615572}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: answerText
+        node: {fileID: 6034960663221063611}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: positive_Out
+      _node: {fileID: -1130739687890615572}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  conversationText: The man has lost interest in you
+  connections: 
+  positive_Out: 
+  textOnScreen: ........
+  waitSeconds: 1
+  isFirst: 0
+  fileName: 
+  show: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8beb4fabd52ae5944905c7e384da5c94, type: 3}
+  m_Name: New Conversation Graph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -7083674542461254123}
+  - {fileID: -8788079011320908138}
+  - {fileID: -5707446606759293275}
+  - {fileID: 2082018379306309127}
+  - {fileID: -7019396739160396595}
+  - {fileID: 7275444642240160975}
+  - {fileID: -5485526162166686023}
+  - {fileID: 6658894178628311673}
+  - {fileID: 4125951990952896792}
+  - {fileID: -4433541023015583166}
+  - {fileID: 5395674352859968162}
+  - {fileID: -2376449673636772870}
+  - {fileID: -1932512908646166454}
+  - {fileID: 6034960663221063611}
+  - {fileID: -1130739687890615572}
+  - {fileID: 467858763464305773}
+  - {fileID: 1207524375352419190}
+--- !u!114 &467858763464305773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28381776fcd1b7548a15164fc98b6813, type: 3}
+  m_Name: Answer
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 2024, y: 72}
+  ports:
+    keys:
+    - connection
+    - answerText
+    values:
+    - _fieldName: connection
+      _node: {fileID: 467858763464305773}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: positive_Out
+        node: {fileID: -1932512908646166454}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: answerText
+      _node: {fileID: 467858763464305773}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: connections
+        node: {fileID: 1207524375352419190}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  connection: 
+  answerText: Tell him you get it
+  answerTextOnScreen: I know. I was there too remember
+  waitSeconds: 1
+  events:
+  - {fileID: 11400000, guid: 086bea14a67cd404fb6347f08d393458, type: 2}
+--- !u!114 &1207524375352419190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5649aa893e68f41b33d851dd7109a5, type: 3}
+  m_Name: Conversation
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 2280, y: 8}
+  ports:
+    keys:
+    - connections
+    - positive_Out
+    values:
+    - _fieldName: connections
+      _node: {fileID: 1207524375352419190}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: answerText
+        node: {fileID: 467858763464305773}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: positive_Out
+      _node: {fileID: 1207524375352419190}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  conversationText: The man is once again surprised
+  connections: 
+  positive_Out: 
+  textOnScreen: You were?? / I mean.. OFCOURSE you were!
+  waitSeconds: 1
+  isFirst: 0
+  fileName: 
+  show: 1
+--- !u!114 &2082018379306309127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5649aa893e68f41b33d851dd7109a5, type: 3}
+  m_Name: Conversation
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 40, y: -88}
+  ports:
+    keys:
+    - connections
+    - positive_Out
+    values:
+    - _fieldName: connections
+      _node: {fileID: 2082018379306309127}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: answerText
+        node: {fileID: -5707446606759293275}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: positive_Out
+      _node: {fileID: 2082018379306309127}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: connection
+        node: {fileID: 7275444642240160975}
+        reroutePoints: []
+      - fieldName: connection
+        node: {fileID: 4125951990952896792}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  conversationText: The shady dude is not pleased
+  connections: 
+  positive_Out: 
+  textOnScreen: You have his eyes, y'know
+  waitSeconds: 1
+  isFirst: 0
+  fileName: 
+  show: 1
+--- !u!114 &4125951990952896792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28381776fcd1b7548a15164fc98b6813, type: 3}
+  m_Name: Answer
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 680, y: -152}
+  ports:
+    keys:
+    - connection
+    - answerText
+    values:
+    - _fieldName: connection
+      _node: {fileID: 4125951990952896792}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: positive_Out
+        node: {fileID: 2082018379306309127}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: answerText
+      _node: {fileID: 4125951990952896792}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: connections
+        node: {fileID: 5395674352859968162}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  connection: 
+  answerText: "Tell him you\xB4re sorry"
+  answerTextOnScreen: Sorry that was rude
+  waitSeconds: 1
+  events:
+  - {fileID: 11400000, guid: 086bea14a67cd404fb6347f08d393458, type: 2}
+--- !u!114 &5395674352859968162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5649aa893e68f41b33d851dd7109a5, type: 3}
+  m_Name: Conversation
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1000, y: -296}
+  ports:
+    keys:
+    - connections
+    - positive_Out
+    values:
+    - _fieldName: connections
+      _node: {fileID: 5395674352859968162}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: answerText
+        node: {fileID: -4433541023015583166}
+        reroutePoints: []
+      - fieldName: answerText
+        node: {fileID: 4125951990952896792}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: positive_Out
+      _node: {fileID: 5395674352859968162}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: connection
+        node: {fileID: -2376449673636772870}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  conversationText: The npc is surprised
+  connections: 
+  positive_Out: 
+  textOnScreen: I didn't think you'd actually go along with me.../ I just want a
+    nice, easy life. What's wrong with that?
+  waitSeconds: 1
+  isFirst: 0
+  fileName: 
+  show: 1
+--- !u!114 &6034960663221063611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28381776fcd1b7548a15164fc98b6813, type: 3}
+  m_Name: Answer
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1976, y: -184}
+  ports:
+    keys:
+    - connection
+    - answerText
+    values:
+    - _fieldName: connection
+      _node: {fileID: 6034960663221063611}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: positive_Out
+        node: {fileID: -1932512908646166454}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: answerText
+      _node: {fileID: 6034960663221063611}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: connections
+        node: {fileID: -1130739687890615572}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  connection: 
+  answerText: Tell him he's crazy
+  answerTextOnScreen: You're crazy man.. / I have to go
+  waitSeconds: 1
+  events:
+  - {fileID: 11400000, guid: fd5feec781e769f4488100097f0ba056, type: 2}
+--- !u!114 &6658894178628311673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28381776fcd1b7548a15164fc98b6813, type: 3}
+  m_Name: Answer
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 280, y: -440}
+  ports:
+    keys:
+    - connection
+    - answerText
+    values:
+    - _fieldName: connection
+      _node: {fileID: 6658894178628311673}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: positive_Out
+        node: {fileID: -7019396739160396595}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: answerText
+      _node: {fileID: 6658894178628311673}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: connections
+        node: {fileID: -5485526162166686023}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  connection: 
+  answerText: Act worried
+  answerTextOnScreen: Maybe I shouldn't
+  waitSeconds: 1
+  events:
+  - {fileID: 11400000, guid: fd5feec781e769f4488100097f0ba056, type: 2}
+--- !u!114 &7275444642240160975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28381776fcd1b7548a15164fc98b6813, type: 3}
+  m_Name: Answer
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 296, y: 216}
+  ports:
+    keys:
+    - connection
+    - answerText
+    values:
+    - _fieldName: connection
+      _node: {fileID: 7275444642240160975}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: positive_Out
+        node: {fileID: 2082018379306309127}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: answerText
+      _node: {fileID: 7275444642240160975}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: connections
+        node: {fileID: -5485526162166686023}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  connection: 
+  answerText: End the conversation
+  answerTextOnScreen: Aaand I'm out
+  waitSeconds: 1
+  events:
+  - {fileID: 11400000, guid: fd5feec781e769f4488100097f0ba056, type: 2}

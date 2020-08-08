@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65aebf2eaf117c47b8d94f1086797b7, type: 3}
+  m_Name: test cool
+  m_EditorClassIdentifier: 
+  conversations:
+  - id: 0
+    infoText: Welcome to your first conversation
+    text: Hoi!
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 0000000003000000
+  - id: 1
+    infoText: The npc is very happy
+    text: I am so glad you are willing to talk to me
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 0100000002000000
+  - id: 2
+    infoText: The npc is sad but not surpirsed
+    text: Our time together was brief / but I will remember you
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 
+  - id: 3
+    infoText: The npc is surprised
+    text: wOw you are so kind sir
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 
+  - id: 4
+    infoText: The npc is very sad
+    text: Why won;t you talk to me??
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 0400000005000000
+  - id: 5
+    infoText: The npc is sad but not surpirsed
+    text: Our time together was brief / but I will remember you
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 
+  - id: 6
+    infoText: The npc is surprised
+    text: wOw you are so kind sir
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 
+  answers:
+  - id: 0
+    infoText: say hi
+    text: hi!
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 02000000
+    nextAnswers: 
+  - id: 1
+    infoText: Act worried
+    text: Maybe I shouldn't
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 03000000
+    nextAnswers: 
+  - id: 2
+    infoText: Tell him he seems nice
+    text: 'You seem like a nice guy '
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 04000000
+    nextAnswers: 
+  - id: 3
+    infoText: say nothing
+    text: ......
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 05000000
+    nextAnswers: 
+  - id: 4
+    infoText: End the conversation
+    text: oke bye
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 06000000
+    nextAnswers: 
+  - id: 5
+    infoText: "Tell him you\xB4re sorry"
+    text: Sorry that was rude
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 07000000
+    nextAnswers: 
+  fileName: test cool

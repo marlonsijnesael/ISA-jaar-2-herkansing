@@ -1,0 +1,374 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65aebf2eaf117c47b8d94f1086797b7, type: 3}
+  m_Name: example 1
+  m_EditorClassIdentifier: 
+  conversations:
+  - id: 0
+    infoText: There's a shady man looking at you
+    text: You must find it before the others do.
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 0000000009000000
+    events: []
+  - id: 1
+    infoText: The shady dude takes a good look at you
+    text: '"We could get arrested for this, son."'
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 0100000005000000
+    events: []
+  - id: 2
+    infoText: The npc is sad but not surpirsed
+    text: Once you leave, you'll lose everything, son
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 02000000
+    events: []
+  - id: 3
+    infoText: There was a strange wailing sound coming from the next room
+    text: I saw it as clearly as I see you standing there now. / There was a legend
+      about the well in the garden / The whole family had been cursed since / That
+      summer seemed to last forever
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 0300000004000000
+    events: []
+  - id: 4
+    infoText: The man has lost interest in you
+    text: ........
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 
+    events: []
+  - id: 5
+    infoText: The man is once again surprised
+    text: You were?? / I mean.. OFCOURSE you were!
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 
+    events: []
+  - id: 6
+    infoText: The npc is surprised
+    text: I didn't think you'd actually go along with me.../ I just want a nice,
+      easy life. What's wrong with that?
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 06000000
+    events: []
+  - id: 7
+    infoText: There was a strange wailing sound coming from the next room
+    text: I saw it as clearly as I see you standing there now. / There was a legend
+      about the well in the garden / The whole family had been cursed since / That
+      summer seemed to last forever
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 0700000008000000
+    events: []
+  - id: 8
+    infoText: The man has lost interest in you
+    text: ........
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 
+    events: []
+  - id: 9
+    infoText: The man is once again surprised
+    text: You were?? / I mean.. OFCOURSE you were!
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 
+    events: []
+  - id: 10
+    infoText: The shady dude is not pleased
+    text: You have his eyes, y'know
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 0a0000000e000000
+    events: []
+  - id: 11
+    infoText: The npc is sad but not surpirsed
+    text: Once you leave, you'll lose everything, son
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 0b000000
+    events: []
+  - id: 12
+    infoText: There was a strange wailing sound coming from the next room
+    text: I saw it as clearly as I see you standing there now. / There was a legend
+      about the well in the garden / The whole family had been cursed since / That
+      summer seemed to last forever
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 0c0000000d000000
+    events: []
+  - id: 13
+    infoText: The man has lost interest in you
+    text: ........
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 
+    events: []
+  - id: 14
+    infoText: The man is once again surprised
+    text: You were?? / I mean.. OFCOURSE you were!
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 
+    events: []
+  - id: 15
+    infoText: The npc is surprised
+    text: I didn't think you'd actually go along with me.../ I just want a nice,
+      easy life. What's wrong with that?
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 0f000000
+    events: []
+  - id: 16
+    infoText: There was a strange wailing sound coming from the next room
+    text: I saw it as clearly as I see you standing there now. / There was a legend
+      about the well in the garden / The whole family had been cursed since / That
+      summer seemed to last forever
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 1000000011000000
+    events: []
+  - id: 17
+    infoText: The man has lost interest in you
+    text: ........
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 
+    events: []
+  - id: 18
+    infoText: The man is once again surprised
+    text: You were?? / I mean.. OFCOURSE you were!
+    waitTime: 1
+    answers: []
+    isAnswer: 0
+    nextConversation: 
+    nextAnswers: 
+    events: []
+  answers:
+  - id: 0
+    infoText: Ask further
+    text: What am I looking for?
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 02000000
+    nextAnswers: 
+    events:
+    - {fileID: 11400000, guid: 086bea14a67cd404fb6347f08d393458, type: 2}
+  - id: 1
+    infoText: Act worried
+    text: Maybe I shouldn't
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 03000000
+    nextAnswers: 
+    events:
+    - {fileID: 11400000, guid: fd5feec781e769f4488100097f0ba056, type: 2}
+  - id: 2
+    infoText: Tell him to get on with it
+    text: Please.. get to the point
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 04000000
+    nextAnswers: 
+    events: []
+  - id: 3
+    infoText: Tell him he's crazy
+    text: You're crazy man.. / I have to go
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 05000000
+    nextAnswers: 
+    events:
+    - {fileID: 11400000, guid: fd5feec781e769f4488100097f0ba056, type: 2}
+  - id: 4
+    infoText: Tell him you get it
+    text: I know. I was there too remember
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 06000000
+    nextAnswers: 
+    events:
+    - {fileID: 11400000, guid: 086bea14a67cd404fb6347f08d393458, type: 2}
+  - id: 5
+    infoText: Tell him he seems okay
+    text: I'm in / What do I have to do?
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 07000000
+    nextAnswers: 
+    events:
+    - {fileID: 11400000, guid: 086bea14a67cd404fb6347f08d393458, type: 2}
+  - id: 6
+    infoText: Tell him to get on with it
+    text: Please.. get to the point
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 08000000
+    nextAnswers: 
+    events: []
+  - id: 7
+    infoText: Tell him he's crazy
+    text: You're crazy man.. / I have to go
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 09000000
+    nextAnswers: 
+    events:
+    - {fileID: 11400000, guid: fd5feec781e769f4488100097f0ba056, type: 2}
+  - id: 8
+    infoText: Tell him you get it
+    text: I know. I was there too remember
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 0a000000
+    nextAnswers: 
+    events:
+    - {fileID: 11400000, guid: 086bea14a67cd404fb6347f08d393458, type: 2}
+  - id: 9
+    infoText: Be mean
+    text: ...... / Ehm what?
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 0b000000
+    nextAnswers: 
+    events:
+    - {fileID: 11400000, guid: fd5feec781e769f4488100097f0ba056, type: 2}
+  - id: 10
+    infoText: End the conversation
+    text: Aaand I'm out
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 0c000000
+    nextAnswers: 
+    events:
+    - {fileID: 11400000, guid: fd5feec781e769f4488100097f0ba056, type: 2}
+  - id: 11
+    infoText: Tell him to get on with it
+    text: Please.. get to the point
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 0d000000
+    nextAnswers: 
+    events: []
+  - id: 12
+    infoText: Tell him he's crazy
+    text: You're crazy man.. / I have to go
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 0e000000
+    nextAnswers: 
+    events:
+    - {fileID: 11400000, guid: fd5feec781e769f4488100097f0ba056, type: 2}
+  - id: 13
+    infoText: Tell him you get it
+    text: I know. I was there too remember
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 0f000000
+    nextAnswers: 
+    events:
+    - {fileID: 11400000, guid: 086bea14a67cd404fb6347f08d393458, type: 2}
+  - id: 14
+    infoText: "Tell him you\xB4re sorry"
+    text: Sorry that was rude
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 10000000
+    nextAnswers: 
+    events:
+    - {fileID: 11400000, guid: 086bea14a67cd404fb6347f08d393458, type: 2}
+  - id: 15
+    infoText: Tell him to get on with it
+    text: Please.. get to the point
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 11000000
+    nextAnswers: 
+    events: []
+  - id: 16
+    infoText: Tell him he's crazy
+    text: You're crazy man.. / I have to go
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 12000000
+    nextAnswers: 
+    events:
+    - {fileID: 11400000, guid: fd5feec781e769f4488100097f0ba056, type: 2}
+  - id: 17
+    infoText: Tell him you get it
+    text: I know. I was there too remember
+    waitTime: 1
+    answers: []
+    isAnswer: 1
+    nextConversation: 13000000
+    nextAnswers: 
+    events:
+    - {fileID: 11400000, guid: 086bea14a67cd404fb6347f08d393458, type: 2}
+  fileName: example 1
