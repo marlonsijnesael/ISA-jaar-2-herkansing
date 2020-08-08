@@ -36,8 +36,8 @@ MonoBehaviour:
       _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: connections
-        node: {fileID: -7019396739160396595}
+      - fieldName: connection
+        node: {fileID: 6658894178628311673}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -98,60 +98,6 @@ MonoBehaviour:
   textOnScreen: You must find it before the others do.
   waitSeconds: 1
   isFirst: 1
-  fileName: example 1
-  show: 1
---- !u!114 &-7019396739160396595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa5649aa893e68f41b33d851dd7109a5, type: 3}
-  m_Name: Conversation
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 8, y: -456}
-  ports:
-    keys:
-    - connections
-    - positive_Out
-    values:
-    - _fieldName: connections
-      _node: {fileID: -7019396739160396595}
-      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: answerText
-        node: {fileID: -8788079011320908138}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: positive_Out
-      _node: {fileID: -7019396739160396595}
-      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: connection
-        node: {fileID: 6658894178628311673}
-        reroutePoints: []
-      - fieldName: connection
-        node: {fileID: -4433541023015583166}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  conversationText: The shady dude takes a good look at you
-  connections: 
-  positive_Out: 
-  textOnScreen: '"We could get arrested for this, son."'
-  waitSeconds: 1
-  isFirst: 0
   fileName: 
   show: 1
 --- !u!114 &-5707446606759293275
@@ -190,8 +136,8 @@ MonoBehaviour:
       _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: connections
-        node: {fileID: 2082018379306309127}
+      - fieldName: connection
+        node: {fileID: 7275444642240160975}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -280,10 +226,7 @@ MonoBehaviour:
       _node: {fileID: -4433541023015583166}
       _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: positive_Out
-        node: {fileID: -7019396739160396595}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -477,8 +420,6 @@ MonoBehaviour:
   - {fileID: -7083674542461254123}
   - {fileID: -8788079011320908138}
   - {fileID: -5707446606759293275}
-  - {fileID: 2082018379306309127}
-  - {fileID: -7019396739160396595}
   - {fileID: 7275444642240160975}
   - {fileID: -5485526162166686023}
   - {fileID: 6658894178628311673}
@@ -588,60 +529,6 @@ MonoBehaviour:
   isFirst: 0
   fileName: 
   show: 1
---- !u!114 &2082018379306309127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa5649aa893e68f41b33d851dd7109a5, type: 3}
-  m_Name: Conversation
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 40, y: -88}
-  ports:
-    keys:
-    - connections
-    - positive_Out
-    values:
-    - _fieldName: connections
-      _node: {fileID: 2082018379306309127}
-      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: answerText
-        node: {fileID: -5707446606759293275}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: positive_Out
-      _node: {fileID: 2082018379306309127}
-      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: connection
-        node: {fileID: 7275444642240160975}
-        reroutePoints: []
-      - fieldName: connection
-        node: {fileID: 4125951990952896792}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  conversationText: The shady dude is not pleased
-  connections: 
-  positive_Out: 
-  textOnScreen: You have his eyes, y'know
-  waitSeconds: 1
-  isFirst: 0
-  fileName: 
-  show: 1
 --- !u!114 &4125951990952896792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,10 +552,7 @@ MonoBehaviour:
       _node: {fileID: 4125951990952896792}
       _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: positive_Out
-        node: {fileID: 2082018379306309127}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -819,8 +703,8 @@ MonoBehaviour:
       _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: positive_Out
-        node: {fileID: -7019396739160396595}
+      - fieldName: answerText
+        node: {fileID: -8788079011320908138}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -868,8 +752,8 @@ MonoBehaviour:
       _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: positive_Out
-        node: {fileID: 2082018379306309127}
+      - fieldName: answerText
+        node: {fileID: -5707446606759293275}
         reroutePoints: []
       _direction: 0
       _connectionType: 0

@@ -463,7 +463,7 @@ MonoBehaviour:
   playerText: {fileID: 401081709}
   answerTextLeft: {fileID: 2061829828}
   answerTextRight: {fileID: 109705629}
-  currentConversation: {fileID: 11400000, guid: 0ed57af9d50f9d241a33681fdfea6cb3,
+  currentConversation: {fileID: 11400000, guid: 2e5421652b2e0e7438c6790bbb8aaa40,
     type: 2}
   currentPart:
     id: 0

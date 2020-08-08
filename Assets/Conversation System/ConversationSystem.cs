@@ -32,7 +32,11 @@ public class ConversationSystem : MonoBehaviour
     //helper function to get the answers we want to display on screen
     private void GetNextAnswers()
     {
-        if (currentPart.nextAnswers.Count == 0) return;
+        if (currentPart.nextAnswers.Count == 0 )
+        {
+            Debug.LogWarning("Your conversation cannot end with an asnwer node please fix this before playing");
+            return;
+        }
         answerTextLeft.text = currentConversation.answers[currentPart.nextAnswers[0]].infoText;
 
         if (currentPart.nextAnswers.Count > 1)

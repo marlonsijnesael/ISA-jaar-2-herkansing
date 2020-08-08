@@ -67,13 +67,20 @@ public class ConversationGraph : NodeGraph
                 ConversationNode cNode = nodes[i] as ConversationNode;
                 c1.conversations = new List<ConversationPart>();
                 c1.answers = new List<ConversationPart>();
-                c1.fileName = cNode.fileName;
+                if (cNode.fileName == string.Empty || cNode.fileName == null)
+                {
+                    c1.fileName = "untitled";
+                }
+                else
+                {
+                    c1.fileName = cNode.fileName;
+                }
 
                 //run a recursive fuction to loop through all nodes in the graph
                 TraceConversation(cNode, c1);
 
                 //call the helperfunction CreateMyAsset to actually save the created scriptable object
-                CreateObject.CreateMyAsset(c1.fileName, c1);
+                CreateObject.CreateMyAsset(c1, c1.fileName);
                 return;
             }
         }
